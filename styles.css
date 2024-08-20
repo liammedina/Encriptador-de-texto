@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    height: 8rem;
+    background-color: #c0c0ba;
+    border-top: 4px solid #0a3871;
+    display: flex;
+    align-items: center;
+}
+.logoAlura{
+    height: 3rem;
+}
+.logoOne{
+    height: 3rem;
+}
+body{
+    background-color: #161517;
+    background-image: url(./multimedia/backgroud.png);
+    color: antiquewhite;
+}
+main{
+    
+    display: flex;
+    font-family: "Nunito", sans-serif;
+}
+.columnIzquierda{
+    background-color: #161517;
+    width: 40rem;
+    height: 20rem;
+    font-family: "Nunito", sans-serif;
+}
+.btns{
+    display: flex;
+}
+.columnDerecha{
+    background-color: #161517;
+    font-family: "Nunito", sans-serif;
+}
+.imgRobot{
+    height: 10rem;
+}
