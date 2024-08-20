@@ -4,32 +4,42 @@
     box-sizing: border-box;
 }
 header{
-    height: 6rem;
-    background-color: #c0c0ba;
+    height: 5rem;
+    background-color: #ffb000;
     border-top: 4px solid #0a3871;
     display: flex;
     align-items: center;
 }
 .logoAlura{
     height: 3rem;
+    margin-left: 2rem;
 }
 .logoOne{
     height: 3rem;
-}
-body{
-    background-color: #161517;
-    background-image: url(./multimedia/backgroud.png);
-    color: antiquewhite;
-    height: 80vh;
+    margin-left: 1.5rem;
 }
 main{
     display: flex;
-    justify-content: space-around;
     font-family: "Nunito", sans-serif;
+    background-image: url(./multimedia/backgroud.png);
+    background-color: #161517;
+    height: 75vh;
+    align-items: center;
+    justify-content: center;
 }
-.columnIzquierda{
-    margin: 4rem 0;
+.conteiner{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #161517;
+    color: antiquewhite;
+    height: 60vh;
+    width: 60vw;
+    border-radius: 10px;
+    border: 3px solid #ffb000;
 }
+
 .warning{
     display: flex;
     margin-bottom: 0.3 rem;
@@ -45,13 +55,22 @@ main{
     font-family: "Nunito", sans-serif;
     font-size: 1.5rem;
     color: antiquewhite;
-    border-radius: 10px;
-    border: 3px solid #ffb000;
     padding: .5rem;
 }
 .btns{
     display: flex;
-    justify-content: baseline;
+    justify-content: space-between;
+}
+button{
+    font-family: "Nunito", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    width: 9rem;
+    height: 3rem;
+    border-radius: 10px;
+    background-color: #00ac95;
+    border: none;
+    color: #161517;
 }
 .columnDerecha{
     background-color: #161517;
@@ -61,6 +80,13 @@ main{
     height: 10rem;
 }
 footer{
-    height: 6.5vh;
-    background-color: #0a3871;
+    height: 5rem;
+    background-color: #ffb000;
+}
+.socialConteiner a{
+    height: 8rem;
+    
+}
+.social{
+    height: 3rem;
 }

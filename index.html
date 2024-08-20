@@ -13,37 +13,39 @@
 </head>
 <body>
     <header>
-        <img class="logoAlura" src="./multimedia/Logo.png" alt="Logo de Alura">
+        <img class="logoAlura" src="./multimedia/logoAlura.png" alt="Logo de Alura">
         <img class="logoOne" src="./multimedia/Logo-One.png" alt="Logo Oracle One">
     </header>
     <main>
-        <section class="columnIzquierda">
-            <div class="warning">
-                <img class="warningImg" src="./multimedia/Warning.png" alt="Ícono de atención">
-                <p>Sólo letras minúsculas y sin acentos</p>
-            </div>
-            <textarea name="texto" id="texto" class="texto" rows="10" cols="20" placeholder="Ingrese el texto aqui"></textarea>
-            <div class="btns">
-                <button class="btnEncriptar" type="submit" onclick="encriptar()">Encriptar</button>
-                <button class="btnDesencriptar" type="submit" onclick="desEncriptar()">Desencriptar</button>
-            </div>
-        </section>
-        <section class="columnDerecha">
-            <div>
-                <textarea name="respuesta" id=""></textarea>
-                <img class="imgRobot" src="./multimedia/3d-casual-life-chatgpt-robot-holding-loupe.png" alt="">
-                <h2>Ningún mensaje fue encontrado</h2>
-                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
-            </div>
-        </section>
+        <div class="conteiner">
+            <section class="columnIzquierda">
+                <div class="warning">
+                    <img class="warningImg" src="./multimedia/Warning.png" alt="Ícono de atención">
+                    <p>Sólo letras minúsculas y sin acentos</p>
+                </div>
+                <textarea name="texto" id="texto" class="texto" rows="10" cols="20" placeholder="Ingrese el texto aqui"></textarea>
+                <div class="btns">
+                    <button class="btnEncriptar" type="submit" onclick="encriptar()">Encriptar</button>
+                    <button class="btnDesencriptar" type="submit" onclick="desEncriptar()">Desencriptar</button>
+                </div>
+            </section>
+            <section class="columnDerecha">
+                <div>
+                    <textarea name="respuesta" id=""></textarea>
+                    <img class="imgRobot" src="./multimedia/3d-casual-life-chatgpt-robot-holding-loupe.png" alt="">
+                    <h2>Ningún mensaje fue encontrado</h2>
+                    <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+            </section>
+        </div>
     </main>
     <footer>
         <div class="contenedorFooter">
             <p>&copy; Copyright 2024 - Lia M. Medina</p>
-            <div class="social">
-                <a href="http://www.instagram.com/" class="social"><img src="logo Instagram" alt="Instagram"></a>
-                <a href="https://www.linkedin.com/" class="social"><img src="logo Linkedin" alt="LinkedIn"></a>
-                <a href="https://github.com/" class="social"><img src="logo GitHub" alt="GitHub"></a>
+            <div class="socialConteiner">
+                <a href="http://www.instagram.com/" class="social"><img src="./multimedia/instagram.png" alt="logo Instagram"></a>
+                <a href="https://www.linkedin.com/" class="social"><img src="./multimedia/Linkedin.png" alt="logo Linkedin"></a>
+                <a href="https://github.com/" class="social"><img src="./multimedia/GitHub.png" alt="logo GitHub"></a>
             </div>
         </div>
     </footer>
