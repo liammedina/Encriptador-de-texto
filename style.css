@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 header{
-    height: 8rem;
+    height: 6rem;
     background-color: #c0c0ba;
     border-top: 4px solid #0a3871;
     display: flex;
@@ -20,20 +20,38 @@ body{
     background-color: #161517;
     background-image: url(./multimedia/backgroud.png);
     color: antiquewhite;
+    height: 80vh;
 }
 main{
-    
     display: flex;
+    justify-content: space-around;
     font-family: "Nunito", sans-serif;
 }
 .columnIzquierda{
+    margin: 4rem 0;
+}
+.warning{
+    display: flex;
+    margin-bottom: 0.3 rem;
+}
+.warningImg{
+    width: 1.5rem;
+    margin-right: 5px;
+}
+.texto{
     background-color: #161517;
-    width: 40rem;
-    height: 20rem;
+    width: 20rem;
+    height: 15rem;
     font-family: "Nunito", sans-serif;
+    font-size: 1.5rem;
+    color: antiquewhite;
+    border-radius: 10px;
+    border: 3px solid #ffb000;
+    padding: .5rem;
 }
 .btns{
     display: flex;
+    justify-content: baseline;
 }
 .columnDerecha{
     background-color: #161517;
@@ -41,4 +59,8 @@ main{
 }
 .imgRobot{
     height: 10rem;
+}
+footer{
+    height: 6.5vh;
+    background-color: #0a3871;
 }
