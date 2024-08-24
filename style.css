@@ -1,3 +1,9 @@
+:root{
+    --primario: #ffb000;
+    --secundario: #5bf3f3;
+    --fuente: antiquewhite;
+    --background: #161517;
+}
 *{
     margin: 0;
     padding: 0;
@@ -8,14 +14,14 @@ header{
     align-items: center;
     justify-content: space-between;
     height: 12.5vh;
-    background-color: #ffb000;
+    background-color: var(--primario);
     display: flex;
     align-items: center;
     padding: 0 3rem;
 }
 .titulo{
     font-family: "Nunito", sans-serif;
-    color: antiquewhite;
+    color: var(--fuente);
 }
 .logoAlura{
     height: 3rem;
@@ -28,7 +34,7 @@ main{
     display: flex;
     font-family: "Nunito", sans-serif;
     background-image: url(./multimedia/backgroud.png);
-    background-color: #161517;
+    background-color: var(--background);
     height: 75vh;
     align-items: center;
     justify-content: center;
@@ -38,12 +44,12 @@ main{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: #161517;
-    color: antiquewhite;
+    background-color: var(--background);
+    color: var(--fuente);
     height: 60vh;
     width: 60vw;
     border-radius: 10px;
-    border: 3px solid #ffb000;
+    border: 3px solid var(--primario);
     padding: 2rem;
 }
 .warning{
@@ -55,12 +61,12 @@ main{
     margin-right: 5px;
 }
 .texto{
-    background-color: #161517;
+    background-color: var(--background);
     width: 20rem;
     height: 15rem;
     font-family: "Nunito", sans-serif;
     font-size: 1.5rem;
-    color: antiquewhite;
+    color: var(--fuente);
     padding: .5rem;
 }
 .btns{
@@ -75,18 +81,21 @@ button{
     width: 9rem;
     height: 3rem;
     border-radius: 10px;
-    background-color: #00ac95;
+    background-color: var(--secundario);
     border: none;
-    color: #161517;
+    color: var(--background);
 }
 .btn:hover{
-    background-color: #ffb000;
+    background-color: var(--primario);
     transform: scale(1.05);
     transition: 300ms;
 }
+.btn::after{
+    transition: all .4s;
+}
 .columnDerecha{
     width: 30vw;
-    background-color: #161517;
+    background-color: var(--background);
     font-family: "Nunito", sans-serif;
 }
 .conteinerColumDer{
@@ -105,12 +114,15 @@ button{
 }
 .conteinerFooter{
     height: 12.5vh;
-    background-color: #ffb000;
+    background-color: var(--primario);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 0 3vw;
+}
+.copyright{
+    font-family: "Nunito", sans-serif;
 }
 .socialConteiner a{
     height: 3rem;
@@ -122,3 +134,10 @@ a :hover{
     transform: scale(1.15);
     transition: 300ms;
 }
+
+
+
+
+@media (max-width: 768px){}
+
+@media (max-width: 480px){}
