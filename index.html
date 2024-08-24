@@ -24,9 +24,9 @@
             <section class="columnIzquierda">
                 <div class="warning">
                     <img class="warningImg" src="./multimedia/Warning.png" alt="Ícono de atención">
-                    <p>Sólo letras minúsculas y sin acentos</p>
+                    <p class="warningText">Sólo letras minúsculas y sin acentos</p>
                 </div>
-                <textarea name="texto" id="texto" class="texto" rows="10" cols="20" placeholder="Ingrese el texto aqui"></textarea>
+                <textarea name="texto" id="texto" class="texto" rows="10" cols="20" placeholder="Ingrese el texto aqui..."></textarea>
                 <div class="btns">
                     <button class="btn btnEncriptar" type="submit" onclick="encriptar()">Encriptar</button>
                     <button class="btn btnDesencriptar" type="submit" onclick="desencriptar()">Desencriptar</button>
@@ -35,8 +35,10 @@
             <section class="columnDerecha">
                 <div class="conteinerColumDer">
                     <img class="imgRobot" src="./multimedia/robotBuscar.png" alt="Imagen de robot">
-                    <h2>Ningún mensaje fue encontrado</h2>
-                    <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                    <div class="textoColDer">
+                        <h2>Ningún mensaje fue encontrado</h2>
+                        <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                    </div>
                     <button class="btnCopiar" onclick="copiar()" type="submit">Copiar</button>
                 </div>
             </section>

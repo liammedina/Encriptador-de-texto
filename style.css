@@ -85,6 +85,7 @@ button{
     border: none;
     color: var(--background);
 }
+
 .btn:hover{
     background-color: var(--primario);
     transform: scale(1.05);
@@ -105,7 +106,7 @@ button{
     text-align: center;
 }
 .imgRobot{
-    width: 7rem;
+    width: 7.5rem;
     height: 25vh;
     margin-bottom: 2rem;
 }
@@ -135,9 +136,94 @@ a :hover{
     transition: 300ms;
 }
 
+/* Media Querys */
 
+@media (max-width: 768px){
+    .conteiner{
+        width: 70vw;
+        height: 70vh;
+        padding: 1rem;
+        flex-direction: column;
+    }
+    .columnIzquierda{
+        height: 70%;
+    }
+    .conteinerColumDer{
+        width: 60vw;
+        height: 20vh;
+        flex-direction: row;
+    }
+    .columnDerecha{
+        width: 65vw;
+    }
+    .textoColDer{
+        flex-direction: column;
+    }
+    .texto{
+        width: 100%;
+        height: 60%;
+        font-size: 1rem;
+    }
+    button{
+        width: 8rem;
+        height: 2rem;
+        font-size: 1rem;
+        z-index: 1;
+    }
+    h2{
+        font-size: 1rem;
+    }
+    .imgRobot{
+        width: 8.5rem;
+        z-index: 0;
+    }
+    
+}
 
-
-@media (max-width: 768px){}
-
-@media (max-width: 480px){}
+@media (max-width: 550px){
+    header{
+        padding: 1.5rem;
+    }
+    .logos{
+        align-content: center;  
+    }
+    .logoAlura{
+        height: 2rem;
+    }
+    .logoOne{
+        height: 2rem;
+        margin-left: 1rem;
+    }
+    .titulo{
+        font-size: 1.7rem;
+    }
+    .warning{
+        align-items: center;
+    }
+    .warningImg{
+        height: 2rem;
+        width: auto;
+    }
+    .warningText{
+        font-size: .8rem;
+    }
+    button {
+        width: 7rem;
+    }
+    .imgRobot{
+        height: 6rem;
+        width: 6rem;
+    }
+    .conteinerFooter{
+        flex-direction: column-reverse;
+        justify-content: space-around;
+    }
+        .socialConteiner{
+        width: 14rem;
+        display: flex;
+        justify-content: space-around;
+    }
+    .social{
+        height: 3rem;
+        }
+}
