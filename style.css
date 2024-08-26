@@ -68,6 +68,7 @@ main{
     font-size: 1.5rem;
     color: var(--fuente);
     padding: .5rem;
+    resize: none;
 }
 .btns{
     display: flex;
@@ -97,6 +98,9 @@ button{
     width: 30vw;
     background-color: var(--background);
     font-family: "Nunito", sans-serif;
+    display: flex;
+    
+    justify-content: center;
 }
 .conteinerColumDer{
     display: flex;
@@ -108,12 +112,39 @@ button{
     width: 7.5rem;
     height: 25vh;
     margin-bottom: 2rem;
+
+}
+.imgRobotDialogo{
+    width: 7.5rem;
+    height: 25vh;
+    margin-bottom: 2rem;
+    visibility: hidden;
+    position: absolute;
 }
 .btnCopiar{
-    display: none;
+    font-family: "Nunito", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    width: 9rem;
+    height: 3rem;
+    border-radius: 10px;
+    background-color: var(--secundario);
+    border: none;
+    color: var(--background);
+    visibility: hidden;
+    position: absolute;
+    margin: 7.7rem;
+}
+.btnCopiar:hover{
+    background-color: var(--primario);
+    transform: scale(1.05);
+    transition: 300ms;
+}
+.btnCopiar::after{
+    transition: all .4s;
 }
 .respuesta{
-    display: none;
+    position: absolute;
     background: transparent;
     border: none;
     border-radius: 10px;
@@ -123,7 +154,10 @@ button{
     font-family: "Nunito", sans-serif;
     font-size: 1.2rem;
     font-weight: 500;
+    margin-top: -8rem;
+    color: antiquewhite;
     resize: none;
+    
 }
 .conteinerFooter{
     height: 12.5vh;
