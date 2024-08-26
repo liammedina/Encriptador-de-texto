@@ -1,4 +1,4 @@
-let btnEncriptar = document.querySelector('.btnEncriptar');
+let encriptar = document.querySelector('.btnEncriptar');
 let textoEncriptar = document.querySelector('.texto');
 let aviso = document.querySelector('.h2ColDer');
 let imgUff = document.querySelector('.imgRobot');
@@ -11,7 +11,7 @@ let imgDialogo = document.querySelector('imgRobotDialogo');
 
 
 
-btnEncriptar.addEventListener('click', e=> {
+encriptar.addEventListener('click', e=> {
     e.preventDefault();
     let texto = textoEncriptar.value;
     let textNorm = texto.normalize('NFD').replace(/[$\.¿\?~!\¡@#%^&*()_|}\{[\]>\<:"`;,\u0300-\u036f']/g, " " );
@@ -51,15 +51,13 @@ btnEncriptar.addEventListener('click', e=> {
         texto = texto.replace(/u/mg, 'ufat');
         
       
+        contenido.remove();
         respuesta.innerHTML = texto;
         btnCopiar.style.visibility = 'inherit';
-        //imgDialogo.style.visibility = 'inherit'
-        contenido.remove();
-
     } 
 })
     
-btnDesencriptar.addEventListener('click', e=> {
+desencriptar.addEventListener('click', e=> {
     e.preventDefault();
     let texto = textoEncriptar.value;
     let textNorm = texto.normalize('NFD').replace(/[$\.¿\?~!\¡@#%^&*()_|}\{[\]>\<:"`;,\u0300-\u036f']/g, " " );
@@ -101,12 +99,14 @@ btnDesencriptar.addEventListener('click', e=> {
       
         respuesta.innerHTML = texto;
         btnCopiar.style.visibility = 'inherit';
-
         contenido.remove();
-
     } 
 })
 
+btnCopiar.addEventListener('click', e=> {
+    e.preventDefault();
+    let copiar = respuesta;
+    copiar.select();
+    document.execCommand('copy');
+})
 
-
-//desencriptar()
