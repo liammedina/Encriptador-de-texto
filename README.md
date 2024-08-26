@@ -1,7 +1,7 @@
 Se realiza una pequeña aplicación, cuya función es la de encriptar y desencriptar texto.
 Aplicación de Encriptado y Desencriptado de Texto
 
-Este proyecto es parte del challenge del curso "Principiante en Programación" dictado por Alura y Oracle. La aplicación permite encriptar y desencriptar texto de forma sencilla, ofreciendo una interfaz amigable y fácil de usar.
+Este proyecto es parte del challenge del curso "Principiante en Programación" dictado por Alura y Oracle Next Generation. La aplicación permite encriptar y desencriptar texto de forma sencilla, ofreciendo una interfaz amigable y fácil de usar.
 
 ## Características
 
